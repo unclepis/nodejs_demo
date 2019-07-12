@@ -1,12 +1,11 @@
 {
-  "name": "nodejs",
+  "name": "mysql-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cross-env NODE_ENV=dev nodemon ./blog-1/bin/server.js",
-    "product": "cross-env NODE_ENV=product nodemon ./blog-1/bin/server.js"
+    "dev":"cross-env NODE_ENV=dev nodemon ./index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,3 +16,4 @@
     "nodemon": "^1.19.1"
   }
 }
+

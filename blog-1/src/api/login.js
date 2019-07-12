@@ -1,7 +1,7 @@
+const { exec } = require('../db/mysql')
 const login = (username, password) => {
-    return {
-        token: '1233211234567'
-    }
+    let sql = `select * from user where username='${username}' and password='${password}'`;
+    return exec(sql)
 }
 
 module.exports = login

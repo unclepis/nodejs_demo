@@ -10,9 +10,11 @@ cross-env // 兼容不同的操作系统
 ```javascript
     request.method 
     request.url 
-    request.headers 
+    request.headers
+    request.headers.cookie // server获取cookie 
 
     response.setHeader  response.setHeader('Content-type',"application/json")
+    response.setHeader response.setHeader('Set-Cookie', `username=${username};path=/;httpOnly;expires=${expires}`) // 设置cookie httpOnly只允许后台修改不允许前台修改
 
     cross-env //兼容mac和window等不同的操作系统
     NODE_ENV //设置不同的环境变量
@@ -20,7 +22,7 @@ cross-env // 兼容不同的操作系统
 
 ## 5. 接口设计
 1) 获取博客的列表list 
-- GET /api/blog/list?author=${author}&keyword=${keyword}
+- GET /api/blog/list?author=${author}&keyword=${keyword} 
 - 可以根据作者名称和关键字过滤
 
 

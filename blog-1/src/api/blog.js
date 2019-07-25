@@ -6,7 +6,7 @@ const getList = (author, keyword) => {
         sql += `and author= '${author}' `
     }
     if (keyword) {
-        sql += `and keyword like '%${keyword}%' `
+        sql += `and title like '%${keyword}%' `
     }
     sql += `order by createTime desc;`
     return exec(sql)
@@ -17,8 +17,8 @@ const getDetails = (id) => {
     return exec(sql)
 }
 
-const deleteBlog = (id) => {
-    let sql = `delete from blog where id='${id}'`
+const deleteBlog = (id, author) => {
+    let sql = `delete from blog where id='${id}' and author = '${author}'`
     return exec(sql)
 }
 const updateBlog = (id, { title, content }) => {
@@ -27,8 +27,8 @@ const updateBlog = (id, { title, content }) => {
     return exec(sql)
 }
 
-const createBlog = ({ title, content }) => {
-    let sql = `insert into blog (title,content,author,createTime) values('${title}','${content}','尤大大',${Date.now()});`
+const createBlog = ({ title, content, author }) => {
+    let sql = `insert into blog (title,content,author,createTime) values('${title}','${content}','${author}',${Date.now()});`
     return exec(sql)
 }
 

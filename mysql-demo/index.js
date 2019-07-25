@@ -5,7 +5,7 @@ const mysql = require('mysql')
 const con = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '19880525LiuLe',
+    password: '123456',
     database: 'myblog'
 })
 // 开始连接数据库

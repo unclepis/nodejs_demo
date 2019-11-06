@@ -1,0 +1,17 @@
+{
+  "name": "pm2-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pro":"cross-env NODE_ENV=Pro pm2 start pm2.conf.json",
+    "restart":"cross-env NODE_ENV=Pro pm2 restart pm2-test-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^6.0.3"
+  }
+}

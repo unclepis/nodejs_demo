@@ -9,20 +9,24 @@ const httpServer = http.createServer((req, res) => {
         "Content-Type": "text/html;charset=UTF-8"
     });
 
+    if(req.url =='/err'){
+        throw new Error('出错了')
+    }
     // 3.往页面打印值
-    res.write('<h1 style="text-align:center">Hello NodeJS</h1>');
+    res.write('<h1 style="text-align:center">Hello NodeJS1</h1>');
     // http://localhost:3000/?userName=jsLearner&userAge=23
     if (req.url != "/favicon.ico") {
-        console.log('req.url is ', req.url)
+        // console.log('req.url is ', req.url)
+        console.error('mock error')
         // url.parse
         let result = url.parse(req.url, true);
-        console.log(`url parse result is `, result)
+        // console.log(`url parse result is `, result)
 
         let formateUrl = url.format(req.url)
-        console.log('url formate result is ', formateUrl)
+        // console.log('url formate result is ', formateUrl)
 
         let resolveUrl = url.resolve('217.0.0.1/home', 'index')
-        console.log('url resolve is use to 替换 域名后面第一个“/”后的内容', resolveUrl)
+        // console.log('url resolve is use to 替换 域名后面第一个“/”后的内容', resolveUrl)
     }
 
     // 4.结束响应

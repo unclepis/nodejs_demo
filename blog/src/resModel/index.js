@@ -19,7 +19,7 @@ class BaseModal {
 class SuccessModal extends BaseModal {
     constructor(data, msg) {
         super(data, msg)
-        this.state = 0
+        this.errno = 0
     }
 }
 
@@ -27,7 +27,7 @@ class SuccessModal extends BaseModal {
 class ErrorModal extends BaseModal {
     constructor(data, msg) {
         super(data, msg)
-        this.state = -1
+        this.errno = -1
     }
 }
 

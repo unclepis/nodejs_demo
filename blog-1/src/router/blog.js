@@ -9,17 +9,19 @@ const handleBlogRouter = (req, res) => {
     if (method === "GET" && req.path == "/api/blog/list") {
         const author = req.query.author || ''
         const keyword = req.query.keyword || ''
-        const listData = getList(author, keyword)
+        let listData = getList(author, keyword)
         return new SuccessModel(listData)
     }
 
     // 获取博客的详情details
-    if (method === "GET" && req.path == "/api/blog/details") {
+    if (method === "GET" && req.path == "/api/blog/detail") {
         return getDetails(id).then(blogItem => {
             if (blogItem) {
                 return new SuccessModel(blogItem[0])
             } else {
-                return new ErrorModel("获取详情出错")
+                return new ErrorModel({
+                    msg:'登陆失败'
+                })
             }
         })
     }
@@ -39,7 +41,7 @@ const handleBlogRouter = (req, res) => {
     }
 
     // 删除一篇博客
-    if (method === "DELETE" && req.path == "/api/blog/delete") {
+    if (method === "DELETE" && req.path == "/api/blog/del") {
         return deleteBlog(id, author).then(res => {
             if (res && res.affectedRows === 1) {
                 return new SuccessModel("删除博客成功")

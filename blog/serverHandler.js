@@ -89,7 +89,6 @@ const serverHandler = (req, res) => {
         } else {
             req.session = sessionData;
         }
-        console.log('req.session', req.session)
         // 处理post请求异步的body中携带的数据
         return getPostBodyData(req)
     }).then(postData => {

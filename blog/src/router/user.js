@@ -18,11 +18,9 @@ const userRouterHandler = (req, res) => {
         return loginResult.then(userInfo => {
             if (userInfo && userInfo[0]) {
                 if (userInfo[0].username) {
-                    // res.setHeader('Set-Cookie',`username=${userInfo[0].username}`)
-                    // console.log('登陆设置cookie', req.headers.cookie)
                     req.session.username = userInfo[0].username
                     req.session.realname = userInfo[0].realname
-                    saveInRedis(req.sessionId, req.session)
+                    saveInRedis(req.sessionID, req.session)
                 }
                 return new SuccessModal(userInfo, '登陆成功')
             }
@@ -30,14 +28,12 @@ const userRouterHandler = (req, res) => {
         })
     }
 
-    if (req.method === 'GET' && req.path === `${interface}${user}/login-test`) {
-        if (req.cookie.username) {
-            return Promise.resolve(new SuccessModal({
-                username: req.cookie
-            }))
-        }
-        return Promise.resolve(new ErrorModal('尚未登陆'))
-    }
+    // if (req.method === 'GET' && req.path === `${interface}${user}/login-test`) {
+    //     if (req.cookie.userid) {
+    //         return Promise.resolve(new SuccessModal(req.session))
+    //     }
+    //     return Promise.resolve(new ErrorModal('尚未登陆'))
+    // }
 }
 
 module.exports = userRouterHandler

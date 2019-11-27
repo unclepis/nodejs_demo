@@ -26,7 +26,7 @@ redisClient.on('error', err => {
 
 // 保存数据到redis并序列化
 const saveInRedis = (key, value) => {
-    if (typeof value === 'Object') {
+    if (typeof value === 'object') {
         redisClient.set(key, JSON.stringify(value))
         return
     }

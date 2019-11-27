@@ -1,5 +1,5 @@
 const config = {
-    PORT: 3000, // server拉起的端口
+    PORT: 8000, // server拉起的端口
     interface: '/api',
     module: {
         blog: '/blog',
@@ -13,9 +13,9 @@ const config = {
     },
     BLOG_LIST: '/list', // 获取博客列表的接口
     BLOG_NEW: '/new', // 新增博客
-    BLOG_DELETE: '/delete', // 删除博客
+    BLOG_DELETE: '/del', // 删除博客
     BLOG_UPDATE: '/update', // 更新博客
-    BLOG_DETAILS: '/details', // 博客详情
+    BLOG_DETAILS: '/detail', // 博客详情
     USER_LOGIN: '/login', // 用户登陆
 }
 

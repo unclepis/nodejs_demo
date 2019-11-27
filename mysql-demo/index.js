@@ -13,7 +13,7 @@ con.connect()
 
 // 执行sql语句
 
-const sql = "select id, username from user";
+const sql = "select id, username from users";
 
 con.query(sql, (err, result) => {
     if (err) {

@@ -1,5 +1,11 @@
 // 引入querystring解析url中的query参数
 const querystring = require('querystring')
+// 引入日志写入
+const {
+    accessLog,
+    errorLog,
+    eventLog
+} = require('./src/log/index')
 
 // 引入路由处理
 const blogRouterHandler = require('./src/router/blog')
@@ -94,6 +100,8 @@ const serverHandler = (req, res) => {
     }).then(postData => {
         // 将解析的body数据放入req的body中在路由中使用
         req.body = postData;
+        // 记录access log
+        accessLog(`${req.method} -- ${req.url} -- ${Date.now()} -- ${req.headers['user-agent']}`);
         // 处理页面路由
         const blogResult = blogRouterHandler(req, res);
         if (blogResult) {
@@ -101,7 +109,10 @@ const serverHandler = (req, res) => {
                 if (needSetCookie) {
                     res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
                 }
+                eventLog(`${req.method} -- ${req.url} -- ${Date.now()} -- ${req.headers['user-agent']}`);
                 res.end(JSON.stringify(blogData))
+            }).catch(error => {
+                errorLog(`${req.method} -- ${req.url} -- ${Date.now()} -- ${req.headers['user-agent']} -- ${error}`);
             })
             return
         }
@@ -111,7 +122,10 @@ const serverHandler = (req, res) => {
                 if (needSetCookie) {
                     res.setHeader('Set-Cookie', `userid=${userId}; path=/; httpOnly; expires=${getCookieExpires()}`)
                 }
+                eventLog(`${req.method} -- ${req.url} -- ${Date.now()} -- ${req.headers['user-agent']}`);
                 res.end(JSON.stringify(userData))
+            }).catch(error => {
+                errorLog(`${req.method} -- ${req.url} -- ${Date.now()} -- ${req.headers['user-agent']} -- ${error}`);
             })
             return
         }

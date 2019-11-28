@@ -100,6 +100,7 @@ const blogRouterHandler = (req, res) => {
             })
         }
     }
+    return Promise.reject('路由不存在')
 }
 
 module.exports = blogRouterHandler

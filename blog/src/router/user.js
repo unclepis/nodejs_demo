@@ -27,7 +27,7 @@ const userRouterHandler = (req, res) => {
             return new ErrorModal('登陆失败')
         })
     }
-
+    return Promise.reject('路由不存在')
     // if (req.method === 'GET' && req.path === `${interface}${user}/login-test`) {
     //     if (req.cookie.userid) {
     //         return Promise.resolve(new SuccessModal(req.session))

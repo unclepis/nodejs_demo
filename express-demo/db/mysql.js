@@ -1,21 +1,17 @@
-const mysql = require('mysql');
-
-const { MYSQL_CONFIG } = require('../config/dba')
-
-// 创建链接
-const con = mysql.createConnection(MYSQL_CONFIG || {
+const mysql = require('mysql')
+const config = {
     host: 'localhost',
     user: 'root',
-    password: '19880525LiuLe',
-    port: 3306,
+    password: '123456',
     database: 'myblog'
-})
+}
+const connection = mysql.createConnection(config);
 
-con.connect();
-// 封装一下mysql查询的函数
+// 建立链接
+connection.connect();
 function exec(sql) {
     return new Promise((resolve, reject) => {
-        con.query(sql, (err, result) => {
+        connection.query(sql, (err, result) => {
             if (err) {
                 reject(err)
                 return
@@ -24,9 +20,5 @@ function exec(sql) {
         })
     })
 }
-// 关闭连接
-// con.end();
 
-module.exports = {
-    exec
-}
+module.exports = exec

@@ -1,0 +1,101 @@
+2019-12-05 10:12:44: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:06: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:87: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:82: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:64: MOCK ERROR
+2019-12-05 10:12:70: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:83: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:78: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:64: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:60: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:68: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:46: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:55: MOCK ERROR
+Error: 大哥我错了
+    at Server.http.createServer (H:\nodejs\pm2-demo\app.js:8:14)
+    at emitTwo (events.js:126:13)
+    at Server.emit (events.js:214:7)
+    at Server.<anonymous> (C:\Users\liule\AppData\Roaming\npm\node_modules\pm2\node_modules\@pm2\io\build\main\metrics\httpMetrics.js:166:33)
+    at parserOnIncoming (_http_server.js:602:12)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:117:23)
+2019-12-05 10:12:23: MOCK ERROR
+2019-12-05 11:12:44: MOCK ERROR
+2019-12-05 11:12:63: MOCK ERROR
+2019-12-05 11:12:66: MOCK ERROR
